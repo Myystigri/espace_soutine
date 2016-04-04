@@ -29,8 +29,14 @@ p{
 }
 h2{
 	text-align: center;
+	color: #fff;
 }
 .icone{
+	height: 150px;
+	text-align: center;
+}
+.icone img{
+	margin: 10px 0;
 	height: 100px;
-	background-color: blue;
+	width: 100px;
 }
