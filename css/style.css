@@ -1,0 +1,36 @@
+.navbar{
+	background-color: red;
+	height: 50px;
+	width:100%;
+	margin:0;
+	border-radius:0;
+}
+.header{
+	background-image: url("../img/01.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	height: 500px;
+}
+h1{
+	line-height: 200px;
+	text-align: center;
+	margin: 0;
+	color: #fff;
+	width: 100%;
+	font-size: 40px;
+}
+p{
+	text-align: center;
+	color: #fff;
+	width: 100%;
+}
+.presentation{
+	background-color: gray;
+}
+h2{
+	text-align: center;
+}
+.icone{
+	height: 100px;
+	background-color: blue;
+}
