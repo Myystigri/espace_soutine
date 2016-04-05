@@ -1,5 +1,5 @@
 .navbar{
-	background-color: red;
+	background-color: #feb913;
 	height: 50px;
 	width:100%;
 	margin:0;
@@ -19,11 +19,17 @@ h1{
 	width: 100%;
 	font-size: 40px;
 }
+@media screen and (max-width: 320px) {
+	h1{
+		font-size: 20px;
+		line-height: 50px;
+	}
+}
 p{
 	text-align: center;
 	color: #fff;
 	width: 100%;
-}
+}	
 .presentation{
 	background-color: gray;
 }
@@ -40,9 +46,8 @@ h2{
 	height: 100px;
 	width: 100px;
 }
-.container{
-	padding: 10px;
-	margin: 0;
+.container img{
+	padding-top: 30px;
 }
 .prestation{
 	width: 100%;
