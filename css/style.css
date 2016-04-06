@@ -1,3 +1,4 @@
+/*navbar*/
 .navbar{
 	background-color: #feb913;
 	height: 50px;
@@ -5,6 +6,7 @@
 	margin:0;
 	border-radius:0;
 }
+/*accueil*/
 .header{
 	background-image: url("../img/01.jpg");
 	background-attachment: fixed;
@@ -20,6 +22,10 @@ h1{
 	font-size: 40px;
 }
 @media screen and (max-width: 320px) {
+	.header{
+		background-size: 300px;
+		height: 150px;
+	}
 	h1{
 		font-size: 20px;
 		line-height: 50px;
@@ -29,11 +35,12 @@ p{
 	text-align: center;
 	color: #fff;
 	width: 100%;
-}	
+}
+/*Présentation*/
 .presentation{
 	background-color: gray;
 }
-h2{
+.presentation h2{
 	text-align: center;
 	color: #fff;
 }
@@ -46,10 +53,18 @@ h2{
 	height: 100px;
 	width: 100px;
 }
-.container img{
-	padding-top: 30px;
-}
 .prestation{
 	width: 100%;
-	height: 100%;
+	padding:0 !important;
+}
+.prestation h2{
+	text-align: center ;
+	color: #000;
+}
+.img_prestation{
+	padding:10px;
+	opacity: 0.8;
+}
+.img_prestation:hover{
+	opacity: 1;
 }
