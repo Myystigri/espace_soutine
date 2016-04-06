@@ -38,7 +38,7 @@ p{
 }
 /*Présentation*/
 .presentation{
-	background-color: gray;
+	background-color: #17224f;
 }
 .presentation h2{
 	text-align: center;
@@ -56,6 +56,7 @@ p{
 .prestation{
 	width: 100%;
 	padding:0 !important;
+	background-color: #2e4f7c;
 }
 .row{
 	margin: 0px;
