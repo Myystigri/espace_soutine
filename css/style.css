@@ -57,9 +57,24 @@ p{
 	width: 100%;
 	padding:0 !important;
 }
+.row{
+	margin: 0px;
+}
 .prestation h2{
 	text-align: center ;
 	color: #000;
+}
+.textimg{
+	height: 0;
+	margin: 0;
+	color:#fff;
+	position: relative;
+	line-height: 300px;
+	font-size: 4em;
+
+}
+.text:hover{
+	padding: 5px;
 }
 .img_prestation{
 	padding:10px;
@@ -67,4 +82,5 @@ p{
 }
 .img_prestation:hover{
 	opacity: 1;
+	padding: 5px;
 }
