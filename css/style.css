@@ -1,6 +1,15 @@
 /*navbar*/
 
+.navbar {
+	margin-bottom: 0px;
+}
+.gras {
+	color:#000000;
+    font-weight: bold;
+}
+
 /*accueil*/
+
 .header{
 	background-image: url("../img/05.jpg");
 	background-attachment: fixed;
@@ -141,7 +150,44 @@ h1 span{
     position:absolute;
 }
 
+/* Formulaire */
+
+.center {
+	text-align: center;
+}
+.right {
+	float:right;
+}
+.space {
+	margin-top: 30px;
+}
+.mail {
+	width:250px !important;
+}
+.prenom {
+}
+@media screen and (max-width: 360px) {
+
+	.right {
+		float:none;
+	}
+}
+.comment-form-author {
+	color:black;
+}
+
+.form-control {
+
+}
+.formulaire {
+
+}
+.noir {
+	color: black;
+}
+
 /*evenement*/
+
 .evenement{
 	background-color: #888;
 }

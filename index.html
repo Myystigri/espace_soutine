@@ -8,6 +8,32 @@
 	</head>
 	<body>
 <!--nav & accueil-->
+		<div class="navbar">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+        			<div class="navbar-header">
+          				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            				<span class="sr-only">Toggle navigation</span>
+            				<span class="icon-bar"></span>
+            				<span class="icon-bar"></span>
+            				<span class="icon-bar"></span>
+          				</button>
+          				<a class="navbar-brand" href="#">ESPACE <span class="gras">SOUTINE</span></a>
+        			</div>
+        			<div style="height: 1px;" aria-expanded="false" id="navbar" class="navbar-collapse collapse">
+          				<ul class="nav navbar-nav">
+            				<li class="active"><a href="#">Accueil</a></li>
+            				<li><a href="#presentation">L'Espace Soutine</a></li>
+            				<li><a href="#prestations">Nos Prestations</a></li>
+          				</ul>
+          				<ul class="nav navbar-nav navbar-right">
+            				<li><a href="#infos">Infos Pratiques</a></li>
+            				<li><a href="#contact">Contact</a></li>
+          				</ul>
+        			</div>
+      			</div>
+      		</nav>
+      	</div>
 		<div id="accueil" class="col-md-12 header">
 			<h1>ESPACE <span>SOUTINE</span> :<br />le lieu de vos évènements</h1>
 			<p>Que vous soyez une entreprise, une institution, un acteur culturel ou un particuler</p>
@@ -112,8 +138,49 @@
 			</div>
 		</div>
 <!--Contact-->
-		<div>
-		</div>
+		<div class="formulaire">
+  			<div class="row">
+   				<div class="col-xs-12 col-md-6 col-md-offset-3 col-sm-6 center">
+   					<h1 class="noir">Nous contacter</h1>
+    				<form method="post">
+     					<div class="form-group ">
+      						<label class="control-label " for="name">Prénom</label>
+      						<input class="form-control" id="name" name="name" type="text"/>
+      					</div>
+     					<div class="form-group ">
+      						<label class="control-label " for="name">Nom</label>
+      						<input class="form-control" id="name" name="name" type="text"/>
+     					</div>
+     					<div class="form-group ">
+      						<label class="control-label requiredField" for="email">Email<span class="asteriskField">*</span></label>
+      						<input class="form-control" id="email" name="email" type="text"/>
+     					</div>
+     					<div class="form-group ">
+     						<label class="control-label " for="select">Vous êtes</label>
+     						<select class="select form-control" id="select" name="select">
+     							<option value="First Choice">Particulier</option>
+     							<option value="Second Choice">Entreprise</option>
+     							<option value="Third Choice">Institution</option>
+     							<option value="Third Choice">Acteur Culturel</option>
+     						</select>
+     					</div>
+     					<div class="form-group ">
+      						<label class="control-label requiredField" for="subject">Objet<span class="asteriskField">*</span></label>
+      						<input class="form-control" id="subject" name="subject" type="text"/>
+     					</div>
+     					<div class="form-group ">
+     						<label class="control-label " for="message">Message</label>
+      						<textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+      					</div>
+      					<div class="form-group">
+      						<div>
+      							<button class="btn btn-primary " name="submit" type="submit">Envoyer</button>
+      						</div>
+      					</div>
+      				</form>
+      			</div>
+      		</div>
+      	</div>
 <!--Evenements-->
 		<div class="col-xs-12 col-md-12 evenement">
 			<div class="col-xs-12 col-md-2 col-md-offset-2">
@@ -138,5 +205,7 @@
 <!--footer-->
 		<div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	<script src="./js/bootstrap.js"></script>
 	</body>
 </html>
