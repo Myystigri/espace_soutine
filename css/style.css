@@ -16,6 +16,7 @@ h1{
 	width: 100%;
 	font-size: 3.5em;
 	font-family: "Helvetica";
+	text-shadow: 0px 0px 5px #bbb;
 }
 h1 span{
 	font-weight: bold;
@@ -40,7 +41,9 @@ h1 span{
 .scrollbtn img:hover{
 	opacity: 0.8;
 }
+
 /*Présentation*/
+
 .presentation{
 	padding-bottom: 20px;
 }
@@ -66,7 +69,9 @@ h1 span{
 .icone p{
 	color:#000;
 }
+
 /*prestation*/
+
 .prestation{
 	width: 100%;
 	padding:0 !important;
@@ -109,7 +114,9 @@ h1 span{
 .margepresentation{
 	padding-bottom: 5%;
 }
+
 /*info*/
+
 .info{
 	padding: 5% 0;
 }
@@ -132,6 +139,48 @@ h1 span{
     height:100%;
     width:100%;
     position:absolute;
+}
+
+/*evenement*/
+.evenement{
+	background-color: #888;
+}
+.evenement div{
+	border: solid 1px #888;
+	text-align: justify;
+	margin-top: 5%;
+	background-color: #fff;
+}
+.imgevent{
+	width: 100%;
+	border: solid 1px #888;
+	margin:7% 0;
+}
+.plus{
+	background-color: #feb913;
+	margin-bottom: 7%;
+	color:;
+}
+.plus p{
+	text-align: center;
+	margin:0;
+}
+
+.bouton{
+	
+	border:solid #888 1px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 9%;
+	right: 7%;
+}
+.bouton p{
+	padding: 2px 10px;
+	margin: 0;
+	line-height: 1.5em;
+}
+.img_prestation{
+	padding:10px;
 }
 @media screen and (max-width: 400px) {
 	.header{
