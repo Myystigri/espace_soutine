@@ -100,8 +100,67 @@ h1 span{
 	font-size: 3em;
 	text-align: center;
 }
+/*overflow*/
+.overflow {
+	position: relative;
+}
+.overflow_text {
+	background-color: #000;
+	bottom: 0;
+	color: white;
+	font-size: 1em;
+	left: 0;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	right: 0;
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+	}
 
+.overflow_text:hover { opacity: 1; }
 
+.overflow_text:after,.overflow_text:before {
+  bottom: 1em;
+  content: '';
+  left: 1em;
+  opacity: 0;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 0.6s 0.2s;
+  transition: 0.6s 0.2s;
+}
+
+.overflow_text:before {
+  border-bottom: none;
+  border-top: none;
+  left: 2em;
+  right: 2em;
+}
+
+.overflow_text:after {
+  border-left: none;
+  border-right: none;
+  bottom: 2em;
+  top: 2em;
+}
+
+.overflow_text:hover:after,.overflow_text:hover:before {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.overflow_text h2 { margin-top: 0; }
+
+.overflow_text p { margin-bottom: 1.5em; }
 /*
 .bouton{
 	background-color: #feb913;
