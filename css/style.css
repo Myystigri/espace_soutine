@@ -169,7 +169,7 @@ h1 span{
 
 .bouton{
 	background-color: #11163e;
-	border:solid #888 0px;
+	border:solid 0px;
 	border-radius: 5px;
 	position: absolute;
 	bottom: 9%;
@@ -183,9 +183,7 @@ h1 span{
 .img_prestation{
 	padding: 0 5px;
 }
-.margepresentation{
-	padding-bottom: 1%;
-}
+
 
 /*info*/
 
@@ -194,9 +192,10 @@ h1 span{
 	font-size: 3em;
 	text-align: center;
 	color: #000;
-	margin:1%;
+	margin:2%;
 }
 .info{
+	padding-top: 3%;
 	padding-bottom: 5%;
 }
 .adr1esse{
@@ -265,9 +264,6 @@ h1 span{
 	color: #000;
 	margin:1%;
 }
-.evenement{
-	background-color: #888;
-}
 .evenement div{
 	border: solid 1px #888;
 	text-align: justify;
@@ -279,21 +275,85 @@ h1 span{
 	margin:7% 0;
 }
 .plus{
-	background-color: #feb913;
 	margin-bottom: 7%;
-	color:;
 }
 .plus p{
 	text-align: center;
+	color:#fff;
 	margin:0;
-	background-color: #feb913;
+	background-color: #11163e;
 }
-.plus p:hover{
-	opacity: 0.9;
+
+/*footer*/
+
+.pre-footer
+{
+    height:50px;
+    padding:5px 10px 5px 10px;
+    color:#000;
 }
-.plus p:active{
-	opacity: 0.4;
+.soutine-footer
+{
+    color:#000;
+    height:200px;
+    padding:10px;
 }
+.footer-part-1
+{
+    font-size: 20px;
+    font-family:"Helvetica";
+    height:180px;
+}
+.footer-part-1 span
+{
+    color:#888;
+    font-weight: bold;
+}
+
+.footermidle
+{
+    border-right: solid 50px;
+    border-left: solid 1px;
+}
+.footer-part-2 li{
+    display: inline-block;
+}
+
+.footer-part-2 li{
+    vertical-align: top;
+}
+.footer-part-2
+{
+    height:180px;
+    width: 33%;
+    border-left:solid #aaa 2px;
+    border-right:solid #aaa 2px;
+    text-align: center;
+}
+
+.footer-part-3
+{
+    height:180px;
+}
+.sstitre{
+    font-size: 15px;
+}
+.social{
+    position: absolute;
+    margin-left: 100px;
+    }
+.logo-social {
+    position: relative;
+    float: left;
+    margin-left: 20px;
+
+}
+.logo-social img{
+    width: 48px;
+}
+
+/*media*/
+
 @media screen and (max-width: 400px) {
 	.header{
 		background-size: 500px;
