@@ -95,11 +95,14 @@ h1 span{
 	height: 0;
 	margin: 0;
 	color:#fff;
+	top:0;
 	position: relative;
-	line-height: 600%;
-	font-size: 4em;
+	font-size: 3em;
 	text-align: center;
 }
+
+
+/*
 .bouton{
 	background-color: #feb913;
 	border:solid #888 0px;
@@ -113,6 +116,7 @@ h1 span{
 	margin: 0;
 	line-height: 1.5em;
 }
+*/
 .img_prestation{
 	padding: 0 5px;
 }
