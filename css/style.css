@@ -112,8 +112,9 @@ h1 span{
 	left: 0;
 	opacity: 0;
 	overflow: hidden;
+	padding: 0 3em;
 	position: absolute;
-	text-align: center;
+	text-align: justify;
 	top: 0;
 	right: 0;
 	-webkit-transition: 0.6s;
@@ -161,7 +162,7 @@ h1 span{
 .overflow_text h2 { margin-top: 0; }
 
 .overflow_text p { margin-bottom: 1.5em; }
-/*
+/*bouton*/
 .bouton{
 	background-color: #feb913;
 	border:solid #888 0px;
@@ -175,7 +176,6 @@ h1 span{
 	margin: 0;
 	line-height: 1.5em;
 }
-*/
 .img_prestation{
 	padding: 0 5px;
 }
