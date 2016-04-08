@@ -58,9 +58,14 @@ h1 span{
 .presentation{
 	padding-bottom: 20px;
 }
-.resume{
+.presentation h2{
+	text-align: center;
+	margin:3%;
+}
+.resume p{
 	color: #17224f;
 	text-align: justify;
+	margin-bottom: 7%;
 }
 .icone{
 	height: 150px;
@@ -196,7 +201,7 @@ h1 span{
 }
 .info{
 	padding-top: 3%;
-	padding-bottom: 5%;
+	padding-bottom: 1%;
 }
 .adr1esse{
 	margin:3% 0;
