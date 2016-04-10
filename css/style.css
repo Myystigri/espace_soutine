@@ -1,6 +1,4 @@
-.bli{
-	background-color: red;
-	}/*page*/
+/*page*/
 
 body{
 	background-color: #f1f1f1;
@@ -125,7 +123,7 @@ h1 span{
 
 .prestation{
 	width: 100%;
-	height: 250px;
+	height: 230px;
 	padding: 0;
 }
 .titre h2{
@@ -187,7 +185,6 @@ h1 span{
 	line-height: 1em;	
 	text-align: center;
 }
-
 /*overflow*/
 .overflow {
 	position: relative;
@@ -308,72 +305,6 @@ h1 span{
 	font-size: 2em;
 	text-decoration: none;
 }
-
-/*Nous contacter*/
-
-#nous_contacter h2{
-	font-family: "Helvetica";
-	font-size: 3em;
-	text-align: center;
-	color: #000;
-	margin-top :1.2em;
-}
-.adresse{
-	margin:0;
-}
-.adresse p span{
-	font-weight:bold;
-}
-.info{
-	padding-right: 2%;
-	border-right: solid 2px #bbb;
-}
-.filibus{
-	width: 30%;
-	margin-bottom: 1em;
-}
-.car{
-	width: 20px;
-	margin-right:8px;
-}
-.bus{
-	width: 22px;
-	margin-right:8px;
-}
-.map{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.map iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
-/*ebauche media quaries header*/
-
-@media screen and (max-width: 320px) {
-	.header{
-		background-size: 100%;
-
-	}
-	h1{
-		font-size: 1.2em;
-		line-height:0.5em;
-	}
-	.header h2{
-		margin:1% 0;
-		font-size:0.9em;
-	}
-	.header p{
-		margin:1% 0;
-		font-size: 0.9em;
-	}
-}
 .telecharger p{
 	color:#fff;
 	font-family: "Helvetica";
@@ -394,6 +325,73 @@ h1 span{
 
 	text-decoration: none;
 	background-color: #1c3962;
+}
+
+/*Galerie*/
+
+.galerie h2{
+	font-family: "Helvetica";
+	font-size: 3em;
+	text-align: center;
+	color: #000;
+	margin-top :1.2em;
+	margin-bottom: 0.5em;
+}
+#carousel-example-generic{
+	width: 96%;
+	margin: 0 2%;
+}
+.galerie img{
+	width: 65%;
+}
+
+/*Nous contacter*/
+
+#nous_contacter h2{
+	font-family: "Helvetica";
+	font-size: 3em;
+	text-align: center;
+	color: #000;
+	margin-top :1.2em;
+	margin-bottom: 1em;
+}
+.adresse{
+	margin-bottom:1em;
+}
+.adresse p span{
+	font-weight:bold;
+}
+.info{
+	padding-right: 2%;
+	border-right: solid 2px #bbb;
+}
+.filibus{
+	width: 30%;
+}
+.car{
+	width: 20px;
+	margin-right:8px;
+}
+.bus{
+	width: 22px;
+	margin-right:8px;
+}
+.info h3{
+	text-align: center;
+	margin-top: 0;
+}
+.map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 /* Formulaire*/ 
@@ -431,7 +429,15 @@ h1 span{
 .noir {
 	color: black;
 }
-
+.form_padding{
+	padding: 0;
+}
+.form_padding_l{
+	padding-left: 0;
+}
+.form_padding_r{
+	padding-right: 0;
+}
 
 /*evenement*/
 
@@ -440,17 +446,25 @@ h1 span{
 	font-size: 3em;
 	text-align: center;
 	color: #000;
-	margin:1%;
+	margin-top :1.2em;
+	margin-bottom: 1em;
 }
 .evenement div{
 	border: solid 1px #888;
-	text-align: justify;
+	text-align: ;
 	background-color: #fff;
 }
 .imgevent{
 	width: 100%;
+	max-height: 10em;	
 	border: solid 1px #888;
 	margin:7% 0;
+}
+.evenement a{
+	text-decoration: none;
+}
+.typeheure{
+	font-weight: bold;
 }
 .plus{
 	margin-bottom: 7%;
@@ -528,6 +542,27 @@ h1 span{
 }
 .logo-social img{
     width: 48px;
+}
+
+/*ebauche media quaries header*/
+
+@media screen and (max-width: 320px) {
+	.header{
+		background-size: 100%;
+
+	}
+	h1{
+		font-size: 1.2em;
+		line-height:0.5em;
+	}
+	.header h2{
+		margin:1% 0;
+		font-size:0.9em;
+	}
+	.header p{
+		margin:1% 0;
+		font-size: 0.9em;
+	}
 }
 
 /*media
