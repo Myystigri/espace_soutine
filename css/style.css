@@ -4,6 +4,11 @@ body{
 	background-color: #f1f1f1;
 }
 
+a
+{
+	font-family: "Helvetica";
+}
+
 /*navbar*/
 
 .navbar {
@@ -113,7 +118,7 @@ h1 span{
 }
 
 .align-btn-head{
-	margin-top: 75px;
+	margin-top: 100px;
 }
 .logo{
     position: relative;
@@ -198,7 +203,7 @@ h1 span{
 .pic_line p{
 	text-align: center;
 	margin: 1em 0;
-	color: #17224f;
+	color: #335481;
 	font-weight: bold;
 }
 .pic_line2 p{
@@ -610,14 +615,76 @@ h1 span{
 
 /*evenement*/
 
-.evenement h2{
-	font-family: "Helvetica";
-	font-size: 3em;
-	text-align: center;
-	color: #000;
-	margin-top :50px;
-	margin-bottom: 0.5em;
+.event-area
+{
+	height:auto;
+	padding:50px;
 }
+
+.event-area h2
+{
+	margin:auto;
+	text-align:center;
+	padding:25px;
+}
+
+.eventimg
+{
+	width:100%;
+}
+
+.card
+{
+	width:100%;
+	height:auto;
+	text-align:left;
+	position:relative;
+	min-height:475px;
+	background-color:#FFF;
+}
+
+.card p
+{
+	font-size:20px;
+	margin-top:10px;
+}
+
+
+.containimg
+{
+	text-align:center;
+}
+
+.padding
+{
+	padding:10px;
+}
+
+.boutonbas
+{
+	position:absolute;
+	bottom:0%;
+	height:35px;
+	width:100%;
+	left:0%;
+	padding:2px;
+	text-align:center;
+	background-color:#335481;
+}
+
+.boutonbas
+{
+	font-size:20px;
+	color:#FFF;
+}
+
+.boutonbas:hover
+{
+	text-decoration:none;
+	color:#FFF;
+}
+
+
 .eventmidle{
 	text-align: center;
 	margin-bottom:0;
@@ -630,26 +697,7 @@ h1 span{
 	margin-bottom:20px;
 	height: 300px;
 }
-.imgevent{
-	max-height: 10em;	
-	border: solid 1px #888;
-	margin:0 0 20px 0;
-}
-.evenement a{
-	text-decoration: none;
-}
-.align-left{
-	text-align: left;
-}
-.typeheure{
-	font-weight: bold;
-}
-.btn-bottom{
-	position: absolute;
-	right: 0;
-	left: 0;
-	bottom: 0;
-}
+
 .plus{
 	margin:0 15% 3% 15%;
 }
@@ -706,7 +754,7 @@ p{
 }
 .footer-part-3 h3{
     margin-top: 0;
-     text-align: center;
+     text-align: left;
      text-decoration: none;
      font-size: 20px;
      font-family: "Helvetica"
@@ -721,16 +769,32 @@ p{
     font-size: 15px;
 }
 .social{
-	text-align: center;
+	text-align: left;
  }
 .logo-mairie img{
     width: 200px;
 }
 .logo-social img{
-    height:48px;
+    height:25px;
 }
+
+.logo-social
+{
+	text-align:left;
+}
+
 .marg-footer {
 	margin: 0 0;
+}
+
+.social h3
+{
+	font-size:20px;
+}
+
+#follow_me
+{
+	margin-top:10px;
 }
 
 
