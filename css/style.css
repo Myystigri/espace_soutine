@@ -52,6 +52,9 @@ body{
 
 /*header*/
 
+.header11 {
+	padding-top: 75px;
+}
 .header{
     background-image: url("../img/background.jpg");
     background-attachment: fixed;
