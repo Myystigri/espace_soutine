@@ -44,8 +44,21 @@ body{
     background-size: cover;
     background-color: #000;
     background-repeat: no-repeat;
-    height: 673px
+    height: 673px;
+    position:relative;
 }
+
+.black-filter
+{
+	position:absolute;
+	left:0%;
+	top:0%;
+	height:100%;
+	width:100%;
+	background-color:#000000;
+	opacity:0.6;
+}
+
 h1{
     margin-top: 2%;
     font-family: "Helvetica";
@@ -62,6 +75,18 @@ h1 span{
     font-size: 2em;
     margin-bottom: 3%;
 }
+
+#leves-lieu
+{
+	font-size:40px;
+	margin-top:25px;
+}
+
+#leves
+{
+	font-size:20px;
+}
+
 .header p{
 	font-family: "Helvetica";
     font-size: 2em;
@@ -70,8 +95,25 @@ h1 span{
 .header ul {
 	color:white;
 }
+
+.text-left
+{
+	padding:50px 0px 0px 70px;
+}
+
+.text-left h2
+{
+	line-height:5px;
+}
+
+.text-left ul li
+{
+	line-height:20px;
+	font-size:10px;
+}
+
 .align-btn-head{
-	margin-top: 10%;
+	margin-top: 75px;
 }
 .logo{
     position: relative;
@@ -193,6 +235,7 @@ h1 span{
 .marge2{
 	margin: 0 0 10px 0;
 }
+
 .overflow h2{
 	text-align: center ;
 	font-size: 3em;
@@ -208,7 +251,7 @@ h1 span{
 	position: relative;
 	font-size:1.5em;
 	line-height: 1em;	
-	text-align: left;
+	text-align: center;
 }
 .textimg5 img{
 	padding-bottom: 4px;
@@ -236,7 +279,7 @@ h1 span{
 	position: relative;
 	font-size: 1.5em;
 	line-height: 1em;	
-	text-align: left;
+	text-align: center;
 }
 .nbr img{
 	padding-bottom: 4px;
@@ -414,7 +457,7 @@ h1 span{
 }
 .blanc {
 	background-color:white;
-	margin-top:30px;
+	margin-top:5px;
 	padding:30px;
 }
 /*Galerie*/
@@ -432,7 +475,7 @@ h1 span{
 	margin: 0 2%;
 }
 .carousel-inner{
-	height:700px;
+	height:500px;
 }
 .carousel-inner img{
 	width: 100%;
@@ -441,12 +484,17 @@ h1 span{
 
 /*Nous contacter*/
 
+.white
+{
+	color:#FFF;
+}
+
 #gnous_contacter h2{
 	font-family: "Helvetica";
 	font-size: 3em;
 	text-align: center;
-	color: #000;
-	margin-top :1.2em;
+	color: #FFFFFF;
+	margin-top :25px;
 	margin-bottom: 1em;
 }
 .adresse{
@@ -455,6 +503,7 @@ h1 span{
 .adresse p span{
 	font-weight:bold;
 }
+
 .info{
 	padding-right: 2%;
 	border-right: solid 2px #bbb;
@@ -552,6 +601,13 @@ h1 span{
     }
 }
 
+.blue-area
+{
+	background-color:#335481;
+	margin-top:50px;
+	padding-bottom:25px;
+}
+
 /*evenement*/
 
 .evenement h2{
@@ -559,7 +615,7 @@ h1 span{
 	font-size: 3em;
 	text-align: center;
 	color: #000;
-	margin-top :1.2em;
+	margin-top :50px;
 	margin-bottom: 0.5em;
 }
 .eventmidle{
