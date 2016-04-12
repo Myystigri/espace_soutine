@@ -403,7 +403,7 @@ h1 span{
 	text-align: center;
 	}
 .dl{
-	width: 50%;
+	width: 14%;
 	color:#fff;
 	padding: 10px 0;
 	background-color: #12122c;
@@ -411,6 +411,11 @@ h1 span{
 }
 .dl:hover{
 	background-color: #335481;
+}
+.blanc {
+	background-color:white;
+	margin-top:30px;
+	padding:30px;
 }
 /*Galerie*/
 
@@ -426,13 +431,17 @@ h1 span{
 	width: 96%;
 	margin: 0 2%;
 }
-.galerie img{
-	width: 65%;
+.carousel-inner{
+	height:700px;
+}
+.carousel-inner img{
+	width: 100%;
+	height:100%;
 }
 
 /*Nous contacter*/
 
-#nous_contacter h2{
+#gnous_contacter h2{
 	font-family: "Helvetica";
 	font-size: 3em;
 	text-align: center;
@@ -662,7 +671,7 @@ p{
     width: 200px;
 }
 .logo-social img{
-    width: 48px;
+    height:48px;
 }
 .marg-footer {
 	margin: 0 0;
@@ -690,8 +699,12 @@ p{
 	}
 }
 
+<<<<<<< HEAD
+@media screen and (min-width: 1600px) {
+=======
 @media screen and (max-width: 900px) {
+>>>>>>> b1655f6dd69f8c83cebd01d4203a49b5b6f3fc47
 	.prestation {
 		height:400px;
 	}
-}
+} 

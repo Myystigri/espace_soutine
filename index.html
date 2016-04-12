@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<link type="image/jpg" href="./img/EspaceSoutineFavicon.png" rel="shortcut icon"></link>
 		<title>Espace_soutine</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     	<script src="./js/bootstrap.js"></script>
@@ -33,7 +34,7 @@
 			            			<li><a class="survol" href="#gevenement">Nos événements</a></li>
 			          			</ul>
 			          			<ul class="nav navbar-nav navbar-right">
-			            			<li><a class="bleu" href="#gnous_contacter">Nous contacter</a></li>
+			            			<li><a class="bleu" href="#gnous_contacter"><b>Nous contacter</b></a></li>
 			          			</ul>
 			        		</div>
 			      		</div>
@@ -43,7 +44,7 @@
 			<div class="row">
 				<div class="col-md-12 text-left">
 					<h1>ESPACE <span>SOUTINE<span></h1>
-					<h2>Le lieu de vos évènements</h2>
+					<h2>Le lieu de vos événements</h2>
 					<ul>
 						<li><p>Entreprises</p></li>	
 						<li><p>Institutionnels</p></li>
@@ -79,25 +80,25 @@
 				</div>
 				<div class="col-xs-6 col-md-2 pic_line">
 					<img src="./img/ico/coloc.png" alt="Colloque">
-					<p>Colloque</p>
+					<p>Colloques</p>
 				</div>
 				<div class="col-xs-6 col-md-2 pic_line">
 					<img src="./img/ico/people.png" alt="Seminaire">
-					<p>Seminaire</p>
+					<p>Séminaires</p>
 				</div>
 				<div class="col-xs-6 col-md-2 pic_line">
 					<img src="./img/ico/cocktail.png" alt="Cocktail">
-					<p>Cocktail</p>
+					<p>Cocktails</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-6 col-md-2 col-md-offset-2 pic_line">
 					<img src="./img/ico/music3.png" alt="Concert">
-					<p>Concert</p>
+					<p>Concerts</p>
 				</div>
 				<div class="col-xs-6 col-md-2 pic_line">
 					<img src="./img/ico/rings.png" alt="Mariage">
-					<p>Mariage</p>
+					<p>Mariages</p>
 				</div>
 				<div class="col-xs-6 col-md-2 pic_line">
 					<img src="./img/ico/reveillon.png" alt="Réveillon">
@@ -158,11 +159,11 @@
 					<div class="row marge2">
 						<div class="col-xs-12 col-md-6 img_prestation marge-presta3">
 							<div class="overflow">
-								<h3 class="textimg">Salle de réunion</h3>
+								<h3 class="textimg">Salle de réunions</h3>
 								<p class="textimg5"><img src="./img/ico/cap.png" alt="capacité"> 50 personnes</p>
 								<img class="prestation" src="./img/06.jpg" alt="Salle_de_reunion">
 								<div class="overflow_text">
-									<h3 class="textimg4">Salle de réunion</h3>
+									<h3 class="textimg4">Salle de réunions</h3>
 									<p class="nbr"><img src="./img/ico/cap.png" alt="capacité"> 50 personnes</p>
 									<p class="bli">do eget nisi. Ut auctor sodales laoreet.</p>
 									<ul>
@@ -190,19 +191,20 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 col-md-6 invite_telecharger">
-							<a href="#" download="#">
-								<p>Télécharger nos prestations et tarifs</p>
-							</a>
+						<div class="row">
+							<div class="col-md-12 blanc">
+								<div class="col-xs-12 col-md-offset-3 col-md-6 invite_telecharger">
+									<a href="#" download="#">
+									<p>Télécharger nos prestations et tarifs</p>
+									</a>
+								</div>
+								<div class="col-xs-12 col-md-offset-3 col-md-6 telecharger">
+									<a class="btn-header btn-default" href="#" download="#">
+                    					<span class="dl glyphicon glyphicon-download-alt"><span>
+                    				</a>
+								</div>
+							</div>
 						</div>
-						<div class="col-xs-12 col-md-6 telecharger">
-							<a class="btn-header btn-default" href="#" download="#">
-                    			<span class="dl glyphicon glyphicon-download-alt"><span>
-                    		</a>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -279,7 +281,7 @@
 										<p><img class="bus" src="./img/ico/transport.png" alt="capacité"><span>Bus ligne 8</span></p>
 										<div class="row">
 											<div class="col-xs-6">
-												<p class="horaires">Horaires via:</p>
+												<p class="horaires"><span class="glyphicon glyphicon-time"></span><span> Horaires:</span></p>
 											</div>
 											<div class="col-xs-6">
 												<a href="http://www.filibus.fr/presentation/?rub_code=89" title="filibus"><img class="filibus" src="./img/ico/filibus.png" title="filibus"></a>
@@ -354,8 +356,8 @@
 			</div>
 		</div>
 <!--Evenements-->
-		<div id="evenement" class="col-xs-12 col-md-12 evenement">
-			<h2>Evenements a venir</h2>
+		<div id="gevenement" class="col-xs-12 col-md-12 evenement">
+			<h2>Événements à venir</h2>
 			<div class=" event col-xs-12 col-md-4">
 				<img class="imgevent" src="./img/events/mon-faux-sapin.jpg" alt="mon-faux-sapin">
 				<p class="align-left"><span class="typeheure">Théâtre: </span>Mon faux sapin</p>
@@ -382,8 +384,8 @@
 			</div>
 		</div>
 <!--footer-->
-			<div class="col-xs-12 soutine-footer">
-				<div class="row marg-footer">
+		<div class="col-xs-12 soutine-footer">
+			<div class="row marg-footer">
 				<div class="col-xs-12 col-md-4 footer-part-1">
 					<p class="grey">ESPACE <span>SOUTINE</span><br /></p>
 					<p class="sstitre">41 Rue de la Chacatière <br> 28300 Lèves<br>02.37.180.180</p>
@@ -399,13 +401,13 @@
 						<p>Suivez-nous</p>
 						<div class="col-xs-12 logo-social">
 							<div class="row">
-								<div class="col-xs-6 ">
+								<div class="col-xs-6 col-xs-offset-3">
 									<a href="https://www.facebook.com/villedeleves">
 										<img src="./img/ico/facebook.png">
 									</a>
-								</div>
-								<div class="col-xs-6">
-									<img src="./img/ico/twitter.png">
+									<a href="https://twitter.com/villedeleves">
+										<img src="./img/ico/twitter.png">
+									</a>
 								</div>
 							</div>
 						</div>
@@ -419,15 +421,15 @@
 								<li><a href="#">Accueil</a></li>
 								<li><a href="#gpresentation">Espace Soutine</a></li>
 								<li><a href="#gprestation">Nos prestations</a></li>
-								<li><a href="#galerie">galerie</a></li>
+								<li><a href="#galerie">Galerie</a></li>
 								<li><a href="#gevenement">Evénements</a></li>
 								<li><a href="#gnous_contacter">Contact</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				</div>
 			</div>
+		</div>
 		<div>
 			Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
 		</div>
