@@ -11,6 +11,9 @@ a
 
 /*navbar*/
 
+.navbar-brand{
+	font-size: 20px;
+}
 .navbar {
 	margin-bottom: 0px;
 	background-color: white;
@@ -20,6 +23,7 @@ a
 .gras {
 	color:#000000;
     font-weight: bold;
+    font-size: 19px;
 }
 .survol {
 	color:black !important;
@@ -797,6 +801,7 @@ p{
     width: 200px;
 }
 .logo-social img{
+	margin-top:25px;
     height:25px;
 }
 
