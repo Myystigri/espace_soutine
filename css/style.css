@@ -502,9 +502,11 @@ h1 span{
 {
 	color:#FFF;
 }
+
 .no-padding-left {
 	padding-left: 0px;
 }
+
 #gnous_contacter h2{
 	font-family: "Helvetica";
 	font-size: 3em;
@@ -646,29 +648,34 @@ h1 span{
 
 .card
 {
-	width:100%;
-	height:auto;
+	width:70%;
+	height:350;
 	text-align:left;
 	position:relative;
-	min-height:475px;
+	min-height:300px;
 	background-color:#FFF;
 }
 
 .card p
 {
 	font-size:20px;
-	margin-top:10px;
-}
+	margin:3px 0 0 0;
 
+}
 
 .containimg
 {
-	text-align:center;
+	padding-left: 100px;
+	padding-right: 0px;
 }
 
 .padding
 {
-	padding:10px;
+	padding:0px 10px;
+}
+
+.padding-top{
+	padding-top: 10px;
 }
 
 .boutonbas
@@ -680,7 +687,7 @@ h1 span{
 	left:0%;
 	padding:2px;
 	text-align:center;
-	background-color:#335481;
+	background-color:#12122c;
 }
 
 .boutonbas
@@ -718,6 +725,9 @@ h1 span{
 	margin:0;
 	padding:0.5em 0;
 	background-color: #11163e;
+}
+.card p {
+	font-size:14px;
 }
 
 /*footer*/
@@ -830,12 +840,16 @@ p{
 	}
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 1600px) {
-=======
 @media screen and (max-width: 900px) {
->>>>>>> b1655f6dd69f8c83cebd01d4203a49b5b6f3fc47
 	.prestation {
 		height:400px;
 	}
 } 
+.datee {
+	text-align: right;
+	margin-top: 19% !important;
+}
+.dateebis {
+	text-align: right;
+	margin-top: 9% !important;
+}
