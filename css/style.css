@@ -440,15 +440,23 @@ h1 span{
   	transform: scale(1);
 	opacity: 1;
 }
+.float-left {
+	float:left;
+	font-size: 19px;
+	line-height: 2.5;
+}
+.padding-left-20px{
+	padding-left: 20px;
+}
 .invite_telecharger a{
-	text-align: center;
+
 	font-family: "Helvetica";
 	color: #000;
 	font-size: 2em;
 	text-decoration: none;
 }
 .invite_telecharger a:hover{
-	text-align: center;
+
 	font-family: "Helvetica";
 	color: #000;
 	text-decoration: none;
@@ -456,6 +464,7 @@ h1 span{
 .telecharger p{
 	color:#fff;
 	font-family: "Helvetica";
+
 }
 .telecharger p{
 	border:solid 1px none;
@@ -518,6 +527,10 @@ h1 span{
 .white
 {
 	color:#FFF;
+}
+
+.no-padding-left {
+	padding-left: 0px;
 }
 
 #gnous_contacter h2{
@@ -634,7 +647,7 @@ h1 span{
 
 .blue-area
 {
-	background-color:#335481;
+	background-color:#12122c;
 	margin-top:50px;
 	padding-bottom:25px;
 }
@@ -661,29 +674,34 @@ h1 span{
 
 .card
 {
-	width:100%;
-	height:auto;
+	width:70%;
+	height:350;
 	text-align:left;
 	position:relative;
-	min-height:475px;
+	min-height:300px;
 	background-color:#FFF;
 }
 
 .card p
 {
 	font-size:20px;
-	margin-top:10px;
-}
+	margin:3px 0 0 0;
 
+}
 
 .containimg
 {
-	text-align:center;
+	padding-left: 100px;
+	padding-right: 0px;
 }
 
 .padding
 {
-	padding:10px;
+	padding:0px 10px;
+}
+
+.padding-top{
+	padding-top: 10px;
 }
 
 .boutonbas
@@ -695,7 +713,7 @@ h1 span{
 	left:0%;
 	padding:2px;
 	text-align:center;
-	background-color:#335481;
+	background-color:#12122c;
 }
 
 .boutonbas
@@ -733,6 +751,9 @@ h1 span{
 	margin:0;
 	padding:0.5em 0;
 	background-color: #11163e;
+}
+.card p {
+	font-size:14px;
 }
 
 /*footer*/
@@ -846,12 +867,16 @@ p{
 	}
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 1600px) {
-=======
 @media screen and (max-width: 900px) {
->>>>>>> b1655f6dd69f8c83cebd01d4203a49b5b6f3fc47
 	.prestation {
 		height:400px;
 	}
 } 
+.datee {
+	text-align: right;
+	margin-top: 19% !important;
+}
+.dateebis {
+	text-align: right;
+	margin-top: 9% !important;
+}
