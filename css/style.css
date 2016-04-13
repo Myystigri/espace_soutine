@@ -293,6 +293,21 @@ h1 span{
 .nbr img{
 	padding-bottom: 4px;
 }
+
+.bandeau
+{
+	height:70px;
+	position:absolute;
+	top:0%;
+	left:0%;
+	width:100%;
+	background-color:#12122c;
+	opacity:0.8;
+}
+.overflow:hover .bandeau{
+	opacity: 0;
+}
+
 .textimg3{
 	margin: 10% 10% 0% 10%;
 }
@@ -305,6 +320,9 @@ h1 span{
 	text-align: center;
 }
 /*overflow*/
+.textimg:hover{
+	opacity: 1;
+}
 .overflow {
 	position: relative;
 }
