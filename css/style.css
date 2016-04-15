@@ -486,7 +486,7 @@ h1 span{
 	text-align: center;
 	}
 .dl{
-	width: 14%;
+	width: 100px;
 	color:#fff;
 	padding: 10px 0;
 	background-color: #12122c;
@@ -533,7 +533,7 @@ h1 span{
 	padding-left: 0px;
 }
 
-#gnous_contacter h2{
+.gnous_contacter h2{
 	font-family: "Helvetica";
 	font-size: 3em;
 	text-align: center;
@@ -873,19 +873,8 @@ p{
 		height:400px;
 	}
 } 
-.datee {
-	text-align: right;
-	margin-top: 19% !important;
-}
-.dateebis {
-	text-align: right;
-	margin-top: 11% !important;
-}
-@media screen and (max-width: 991px) {
-	.card {
-		height: 600px;
-	}
-	.datee {
-		margin-top: 11% !important;
+@media screen and (max-width: 992px) {
+	.info {
+		border:none;
 	}
 }
