@@ -715,13 +715,11 @@ h1 span{
 	padding:2px;
 	text-align:center;
 	background-color:#12122c;
-}
-
-.boutonbas
-{
 	font-size:20px;
 	color:#FFF;
 }
+
+
 
 .boutonbas:hover
 {
@@ -876,5 +874,10 @@ p{
 @media screen and (max-width: 992px) {
 	.info {
 		border:none;
+	}
+}
+@media screen and (min-width: 1600px) {
+	.card {
+		height:450px;
 	}
 }
