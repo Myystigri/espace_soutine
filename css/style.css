@@ -868,7 +868,7 @@ p{
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
 	.prestation {
 		height:400px;
 	}
@@ -880,4 +880,12 @@ p{
 .dateebis {
 	text-align: right;
 	margin-top: 11% !important;
+}
+@media screen and (max-width: 991px) {
+	.card {
+		height: 600px;
+	}
+	.datee {
+		margin-top: 11% !important;
+	}
 }
