@@ -875,9 +875,17 @@ p{
 	.info {
 		border:none;
 	}
+	.card {
+		height:550px;
+	}
 }
 @media screen and (min-width: 1600px) {
 	.card {
 		height:450px;
+	}
+}
+@media screen and (max-width: 361px) {
+	.card {
+		height: 300px;
 	}
 }
