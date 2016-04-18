@@ -4,17 +4,17 @@
 			<div class="row">
 				<div class="description col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
 			<?php
-				if(have_posts()) : 
-					while(have_posts()) : the_post(); 
-			?>
-					<div class="news" id="post-<?php the_ID(); ?>">
-						<h2><?php the_title(); ?></h2>
-						<p><?php the_content(); ?></p>
-					</div>
-			<?php
-					endwhile;
-				endif;
-			?>
+ $id = 40;
+ $billet = get_post($id);
+ $title = $billet->post_title;
+ $contenu = $billet->post_content;
+ $contenu = apply_filters('the_content', $contenu);
+ $contenu = str_replace(']]>', ']]&gt;', $contenu);
+?>
+
+ <div id="billet">
+ <?php echo "<h1>$title</h1><p>$contenu</p><strong>$date</strong>"; ?>
+ </div>
 				</div>	
 			</div>
 			<div class="row header11">
@@ -74,7 +74,7 @@
 											if(have_posts()) : 
 												while(have_posts()) : the_post(); 
 										?>
-												<div class="news" id="post-<?php the_ID(); ?>">
+												<div class="news" id="post-<?php the_ID(40); ?>">
 													<h2><?php the_title(); ?></h2>
 													<p><?php the_content(); ?></p>
 												</div>
@@ -142,19 +142,19 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-12 blanc">
-							<div class="col-xs-12 col-md-offset-4 col-md-6 invite_telecharger">
-								<a href="#" download="#">
-									<p class="float-left">Téléchargez nos prestations et tarifs</p>
-								</a>
-								<a class="btn-header btn-default padding-left-20px" href="#" download="#">
-	                    			<span class="dl glyphicon glyphicon-download-alt telecharger "><span>
-	                    		</a>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="col-xs-12 col-md-12 blanc invite_telecharger">
+			<div class="col-md-offset-4 col-md-6">
+				<a href="#" download="#">
+					<p class="float-left">Téléchargez nos prestations et tarifs</p>
+				</a>
+				<a class="btn-header btn-default padding-left-20px" href="#" download="#">
+	        		<span class="dl glyphicon glyphicon-download-alt telecharger "><span>
+	        	</a>
+	        </div>
 		</div>
 <!--Galerie-->
 		<div id="galerie" class="galerie col-md-12">
@@ -325,33 +325,35 @@
 <!--Evenements-->
 		<div id="gevenement" class="col-xs-12 col-md-12 event-area">
 			<h2>Événements à venir</h2>
-			<div class="col-md-4 containimg">
+			<div class="col-xs-12 col-md-4 col-lg-4 containimg">
 				<div class="card">
 					<img class="eventimg" src="./wp-content/themes/espace_soutine/img/events/mon-faux-sapin.jpg" alt="mon-faux-sapin">
 					<div class="padding">
 						<p class="padding-top"><b>Théâtre</b></p>
 						<p>Mon faux sapin, par La Compagnie des 12 Portes</p>
-						<p class="dateebis"><span class="glyphicon glyphicon-calendar"></span>Samedi 23 avril 20h30</p>
+						<div class="datee">
+							<p><span class="glyphicon glyphicon-calendar"></span>Samedi 23 avril 20h30</p>
+						</div>
 						<a class="boutonbas" href="http://www.leves.fr/slider-homepage" title="En savoir plus">
 							En savoir plus
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 containimg">
+			<div class="col-xs-12 col-md-4 col-lg-4 containimg">
 				<div class="card">
 					<img class="eventimg" src="./wp-content/themes/espace_soutine/img/events/Gerard-de-Botton.jpg" alt="Gerard-de-Botton">
 					<div class="padding">
 						<p class="padding-top"><b>Concert</b></p>
 						<p>Gérard de Botton avec l'école de musique de Lèves</p>
-						<p class="dateebis"><span class="glyphicon glyphicon-calendar"></span>Samedi 30 avril 20h30</p>
+						<p class="datee"><span class="glyphicon glyphicon-calendar"></span>Samedi 30 avril 20h30</p>
 						<a class="boutonbas" href="http://www.leves.fr/slider-homepage" title="En savoir plus">
 							En savoir plus
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 containimg">
+			<div class="col-xs-12 col-md-4 col-lg-4 containimg">
 				<div class="card">
 					<img class="eventimg" src="./wp-content/themes/espace_soutine/img/events/becket.jpg" alt="becket">
 					<div class="padding">

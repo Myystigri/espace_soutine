@@ -1,7 +1,7 @@
 /*
 Theme Name: espace_soutine
 Theme URI:
-Author: PIARD Sylvian
+Author: DORIAN TMTC
 Author URI: 
 Description:
 Version: 1.0
@@ -196,7 +196,6 @@ h1 span{
 	padding-top: 2.5px;
 }
 #gpresentation h2{
-	color:#335481;
 	text-align: center;
 	font-family: "Helvetica";
 	margin: 2em 0 0.5em 0;
@@ -496,7 +495,7 @@ h1 span{
 	text-align: center;
 	}
 .dl{
-	width: 14%;
+	width: 100px;
 	color:#fff;
 	padding: 10px 0;
 	background-color: #12122c;
@@ -725,13 +724,11 @@ h1 span{
 	padding:2px;
 	text-align:center;
 	background-color:#12122c;
-}
-
-.boutonbas
-{
 	font-size:20px;
 	color:#FFF;
 }
+
+
 
 .boutonbas:hover
 {
@@ -883,19 +880,21 @@ p{
 		height:400px;
 	}
 } 
-.datee {
-	text-align: left;
-	margin-top: 19% !important;
-}
-.dateebis {
-	text-align: left;
-	margin-top: 11% !important;
-}
-@media screen and (max-width: 991px) {
-	.card {
-		height: 600px;
+@media screen and (max-width: 992px) {
+	.info {
+		border:none;
 	}
-	.datee {
-		margin-top: 11% !important;
+	.card {
+		height:550px;
+	}
+}
+@media screen and (min-width: 1600px) {
+	.card {
+		height:450px;
+	}
+}
+@media screen and (max-width: 361px) {
+	.card {
+		height: 300px;
 	}
 }

@@ -9,7 +9,15 @@ add_action( 'wp_enqueue_scripts', 'enqueue_bootstrap' );
 
 
 
-
+function register_my_menu() {
+		register_nav_menus(
+			array(
+      				'nav-menu' => __( 'Nav Menu' ),
+      				'footer-menu' => __( 'Footer Menu' ),
+    			)
+			);
+	}
+	add_action( 'init', 'register_my_menu' );
 
 
 

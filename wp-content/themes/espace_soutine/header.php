@@ -27,16 +27,11 @@
 			          			<a class="navbar-brand" href="#">ESPACE <span class="gras">SOUTINE</span>
 			        		</div>
 			        		<div style="height: 1px;" aria-expanded="false" id="navbar" class="navbar-collapse collapse">
-			          			<ul class="nav navbar-nav">
-			            			<li><a class="survol" href="#">Accueil</a></li>
-			            			<li><a class="survol" href="#gpresentation">L'Espace Soutine</a></li>
-			            			<li><a class="survol" href="#gprestation">Nos prestations</a></li>
-			            			<li><a class="survol" href="#galerie">Galerie</a></li>
-			            			<li><a class="survol" href="#gevenement">Nos événements</a></li>
-			          			</ul>
-			          			<ul class="nav navbar-nav navbar-right">
-			            			<li><a class="bleu" href="#gnous_contacter">Nous contacter</a></li>
-			          			</ul>
+			          			<?php wp_nav_menu( array(
+									'theme_location' => 'nav-menu',
+									'container' => false,
+									'menu_class' => 'nav navbar-nav' ) ); 
+									?>
 			        		</div>
 			      		</div>
 			   		</nav>
