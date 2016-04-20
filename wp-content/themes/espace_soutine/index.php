@@ -3,53 +3,52 @@
 		<div id="gpresentation" class="col-xs-12">
 			<div class="row">
 				<div class="description col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
-			<?php
- $id = 40;
- $billet = get_post($id);
- $title = $billet->post_title;
- $contenu = $billet->post_content;
- $contenu = apply_filters('the_content', $contenu);
- $contenu = str_replace(']]>', ']]&gt;', $contenu);
-?>
-
- <div id="billet">
- <?php echo "<h1>$title</h1><p>$contenu</p><strong>$date</strong>"; ?>
- </div>
+					<?php
+						 $id = 1;
+						 $billet = get_post($id);
+						 $title = $billet->post_title;
+						 $contenu = $billet->post_content;
+						 $contenu = apply_filters('the_content', $contenu);
+						 $contenu = str_replace(']]>', ']]&gt;', $contenu);
+					?>
+					<div id="billet">
+					 	<?php echo "<h2>$title</h2><p>$contenu</p><strong>$date</strong>"; ?>
+		 			</div>
 				</div>	
 			</div>
 			<div class="row header11">
 				<div class="col-xs-6 col-md-2 col-md-offset-2 pic_line">
-					<img src="./wp-content/themes/espace_soutine/img/ico/business_b.png" alt="logo Repas d'affaire">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/business_b.png" alt="logo Repas d'affaire">
 					<p>Repas d'affaires</p>
 				</div>
 				<div class="col-xs-6 col-md-2 pic_line">
-					<img src="./wp-content/themes/espace_soutine/img/ico/coloc_b.png" alt="Colloque">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/coloc_b.png" alt="Colloque">
 					<p>Colloques</p>
 				</div>
 				<div class="col-xs-6 col-md-2 pic_line">
-					<img src="./wp-content/themes/espace_soutine/img/ico/people_b.png" alt="Seminaire">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/people_b.png" alt="Seminaire">
 					<p>Séminaires</p>
 				</div>
 				<div class="col-xs-6 col-md-2 pic_line">
-					<img src="./wp-content/themes/espace_soutine/img/ico/cocktail_b.png" alt="Cocktail">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/cocktail_b.png" alt="Cocktail">
 					<p>Cocktails</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-6 col-md-2 col-md-offset-2 pic_line">
-					<img src="./wp-content/themes/espace_soutine/img/ico/music_b.png" alt="Concert">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/music_b.png" alt="Concert">
 					<p>Concerts</p>
 				</div>
 				<div class="col-xs-6 col-md-2 pic_line">
-					<img src="./wp-content/themes/espace_soutine/img/ico/rings_b.png" alt="Mariage">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/rings_b.png" alt="Mariage">
 					<p>Mariages</p>
 				</div>
 				<div class="col-xs-6 col-md-2 pic_line">
-					<img src="./wp-content/themes/espace_soutine/img/ico/reveillon_b.png" alt="Réveillon">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/reveillon_b.png" alt="Réveillon">
 					<p>Réveillons</p>
 				</div>
 				<div class="col-xs-6 col-md-2 pic_line">
-					<img src="./wp-content/themes/espace_soutine/img/ico/theatre_b.png" alt="Spectacle">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/theatre_b.png" alt="Spectacle">
 					<p>Spectacles</p>
 				</div>
 			</div>
@@ -63,26 +62,23 @@
 							<div class="overflow">
 								<div class="bandeau"></div>
 								<h3 class="textimg">Grande salle configuration tribune</h3>
-								<p class="textimg5"><img src="./wp-content/themes/espace_soutine/img/ico/cap.png" alt="capacité"> 340 personnes</p>
-								<img class="prestation imgrefund" src="./wp-content/themes/espace_soutine/img/02.jpg" alt="Grande_salle">
+								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 340 personnes</p>
+								<img class="prestation imgrefund" src="<?php echo get_template_directory_uri(); ?>/img/02.jpg" alt="Grande_salle">
 								<div class="overflow_text">
 									<h3 class="textimg4">Grande salle configuration tribune</h3>
-									<p class="nbr"><img src="./wp-content/themes/espace_soutine/img/ico/cap.png" alt="capacité"> 340 personnes</p>
-									<p class="bli">Disponible avec ou sans les tribunes.</p>
-								
-										<?php
-											if(have_posts()) : 
-												while(have_posts()) : the_post(); 
-										?>
-												<div class="news" id="post-<?php the_ID(40); ?>">
-													<h2><?php the_title(); ?></h2>
-													<p><?php the_content(); ?></p>
-												</div>
-										<?php
-												endwhile;
-											endif;
-										?>
-									
+									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 340 personnes</p>
+									<p class="bli">
+									<?php
+										 $id = 29;
+										 $billet = get_post($id);
+										 $contenu = $billet->post_content;
+										 $contenu = apply_filters('the_content', $contenu);
+										 $contenu = str_replace(']]>', ']]&gt;', $contenu);
+									?>
+									</p>
+									<div id="billet">
+									 	<?php echo "<p>$contenu</p>"; ?>
+						 			</div>							
 								</div>
 							</div>
 						</div>
@@ -90,17 +86,23 @@
 							<div class="overflow">
 								<div class="bandeau"></div>
 								<h3 class="textimg">Grande salle configuration repas</h3>
-								<p class="textimg5"><img src="./wp-content/themes/espace_soutine/img/ico/cap.png" alt="capacité"> 220 personnes</p>
-								<img class="prestation imgrefund" src="./wp-content/themes/espace_soutine/img/01.jpg" alt="Grande_salle">
+								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>	/img/ico/cap.png" alt="capacité"> 220 personnes</p>
+								<img class="prestation imgrefund" src="<?php echo get_template_directory_uri(); ?>/img/01.jpg" alt="Grande_salle">
 								<div class="overflow_text">
 									<h3 class="textimg4">Grande salle configuration repas</h3>
-									<p class="nbr"><img src="./wp-content/themes/espace_soutine/img/ico/cap.png" alt="capacité"> 220 personnes</p>
-									<p class="bli">do eget nisi. Ut auctor sodales laoreet.</p>
-									<ul>
-										<li>Lorem ipsum</li>
-										<li>Lorem ipsum</li>
-										<li>Lorem ipsum</li>
-									</ul>
+									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 220 personnes</p>
+									<p class="bli">
+									<?php
+										 $id = 31;
+										 $billet = get_post($id);
+										 $contenu = $billet->post_content;
+										 $contenu = apply_filters('the_content', $contenu);
+										 $contenu = str_replace(']]>', ']]&gt;', $contenu);
+									?>
+									</p>
+									<div id="billet">
+									 	<?php echo "<p>$contenu</p>"; ?>
+						 			</div>
 								</div>
 							</div>
 						</div>
@@ -110,17 +112,23 @@
 							<div class="overflow">
 								<div class="bandeau"></div>
 								<h3 class="textimg">Salle de réunions</h3>
-								<p class="textimg5"><img src="./wp-content/themes/espace_soutine/img/ico/cap.png" alt="capacité"> 50 personnes</p>
-								<img class="prestation imgrefund" src="./wp-content/themes/espace_soutine/img/06.jpg" alt="Salle_de_reunion">
+								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 50 personnes</p>
+								<img class="prestation imgrefund" src="<?php echo get_template_directory_uri(); ?>/img/06.jpg" alt="Salle_de_reunion">
 								<div class="overflow_text">
 									<h3 class="textimg4">Salle de réunions</h3>
-									<p class="nbr"><img src="./wp-content/themes/espace_soutine/img/ico/cap.png" alt="capacité"> 50 personnes</p>
-									<p class="bli">do eget nisi. Ut auctor sodales laoreet.</p>
-									<ul>
-										<li>Lorem ipsum</li>
-										<li>Lorem ipsum</li>
-										<li>Lorem ipsum</li>
-									</ul>
+									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 50 personnes</p>
+									<p class="bli">
+									<?php
+										 $id = 33;
+										 $billet = get_post($id);
+										 $contenu = $billet->post_content;
+										 $contenu = apply_filters('the_content', $contenu);
+										 $contenu = str_replace(']]>', ']]&gt;', $contenu);
+									?>
+									</p>
+									<div id="billet">
+									 	<?php echo "<p>$contenu</p>"; ?>
+						 			</div>	
 								</div>
 							</div>
 						</div>
@@ -128,17 +136,23 @@
 							<div class="overflow">
 								<div class="bandeau"></div>
 								<h3 class="textimg">Hall d'accueil</h3>
-								<p class="textimg5"><img src="./wp-content/themes/espace_soutine/img/ico/cap.png" alt="capacité"> 100 personnes</p>
-								<img class="prestation imgrefund" src="./wp-content/themes/espace_soutine/img/03.jpg" alt="Hall_d_accueil">
+								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 100 personnes</p>
+								<img class="prestation imgrefund" src="<?php echo get_template_directory_uri(); ?>/img/03.jpg" alt="Hall_d_accueil">
 								<div class="overflow_text">
 									<h3 class="textimg4">Hall d'accueil</h3>
-									<p class="nbr"><img src="./wp-content/themes/espace_soutine/img/ico/cap.png" alt="capacité"> 100 personnes</p>	
-									<p class="bli">do eget nisi. Ut auctor sodales laoreet.</p>
-									<ul>
-										<li>Lorem ipsum</li>
-										<li>Lorem ipsum</li>
-										<li>Lorem ipsum</li>
-									</ul>
+									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 100 personnes</p>	
+									<p class="bli">
+									<?php
+										 $id = 35;
+										 $billet = get_post($id);
+										 $contenu = $billet->post_content;
+										 $contenu = apply_filters('the_content', $contenu);
+										 $contenu = str_replace(']]>', ']]&gt;', $contenu);
+									?>
+									</p>
+									<div id="billet">
+									 	<?php echo "<p>$contenu</p>"; ?>
+						 			</div>
 								</div>
 							</div>
 						</div>
@@ -160,58 +174,53 @@
 		<div id="galerie" class="galerie col-md-12">
 			<h2>Galerie</h2>
 			<div class="row">
-				<div id="carousel-example-generic" class="col-md-12 carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="5"></li>
-					</ol>
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<img src="./wp-content/themes/espace_soutine/img/01.jpg" alt="">
-							<div class="carousel-caption"></div>
-						</div>
-						<div class="item">
-							<img src="./wp-content/themes/espace_soutine/img/02.jpg" alt="">
-							<div class="carousel-caption"></div>
-						</div>
-						<div class="item">
-							<img src="./wp-content/themes/espace_soutine/img/03.jpg" alt="">
-							<div class="carousel-caption"></div>
-						</div>
-						<div class="item">
-							<img src="./wp-content/themes/espace_soutine/img/04.jpg" alt="">
-							<div class="carousel-caption"></div>
-						</div>
-						<div class="item">
-							<img src="./wp-content/themes/espace_soutine/img/05.jpg" alt="">
-							<div class="carousel-caption"></div>
-						</div>
-						<div class="item">
-							<img src="./wp-content/themes/espace_soutine/img/06.jpg" alt="">
-							<div class="carousel-caption"></div>
-						</div>
-					</div>
-					<!-- Controls -->
-					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-					</a>
-				</div>
+<div id="carousel-captions" class="carousel slide bs-docs-carousel hidden-xs">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-captions" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-captions" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-captions" data-slide-to="2" class=""></li>
+          <li data-target="#carousel-captions" data-slide-to="3" class=""></li>
+          <li data-target="#carousel-captions" data-slide-to="4" class=""></li>
+        </ol>
+<div class="carousel-inner">
+        <?php
+	          $the_query = new WP_Query(array(
+	           'post_type' =>'post',
+	           'posts_per_page' => 1
+	         ));
+	         while ( $the_query->have_posts() ) :
+	         $the_query->the_post();
+         ?>
+        <div class="item active">
+            First Slide
+        </div>
+        <?php endwhile; wp_reset_postdata(); ?>
+        <?php
+	         $the_query = new WP_Query(array(
+	          'post_type' =>'post',
+	          'offset' => 1
+	         ));
+	         while ( $the_query->have_posts() ) :
+	         $the_query->the_post();
+         ?>
+         <div class="item">
+            Remaining Slides
+         </div>
+        <?php endwhile; wp_reset_postdata(); ?>
+    </div>
+        
+        <a class="left carousel-control" href="#carousel-captions" data-slide="prev">
+          <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-captions" data-slide="next">
+          <span class="icon-next"></span>
+        </a>
+</div>
 			</div>
 			<div id="gnous_contacter"></div>
 		</div>
 <!--Nous contacter-->
-		<div class="col-md-12 blue-area">
+		<div class="col-xs-12 col-md-12 blue-area">
 			<div class="gnous_contacter col-xs-12 col-md-12">
 				<div class="row">
 				<h2>Nous contacter</h2>
@@ -224,16 +233,16 @@
 											<p><span class="glyphicon glyphicon-map-marker"></span><span> </span>41 rue de la Chacatière</p>
 											<p>28300 Lèves</p>
 											<p><span class="glyphicon glyphicon-earphone"> </span> 02.37.180.180</p>
-											<p><img class="car" src="./wp-content/themes/espace_soutine/img/ico/car.png" alt="capacité">Parking gratuit</p>
+											<p><img class="car" src="<?php echo get_template_directory_uri(); ?>/img/ico/car.png" alt="capacité">Parking gratuit</p>
 										</div>
 										<div class="col-xs-6 col-md-5 white">
-											<p><img class="bus" src="./wp-content/themes/espace_soutine/img/ico/transport.png" alt="capacité"><span>Bus ligne 8</span></p>
+											<p><img class="bus" src="<?php echo get_template_directory_uri(); ?>/img/ico/transport.png" alt="capacité"><span>Bus ligne 8</span></p>
 											<div class="row">
 												<div class="col-xs-6">
 													<p class="horaires"><span class="glyphicon glyphicon-time"></span><span> Horaires :</span></p>
 												</div>
 												<div class="col-xs-6">
-													<a href="http://www.filibus.fr/presentation/?rub_code=89" title="filibus"><img class="filibus" src="./wp-content/themes/espace_soutine/img/ico/filibus.png" title="filibus"></a>
+													<a href="http://www.filibus.fr/presentation/?rub_code=89" title="filibus"><img class="filibus" src="<?php echo get_template_directory_uri(); ?>/img/ico/filibus.png" title="filibus"></a>
 												</div>
 											</div>
 											<div class="col-xs-12 no-padding-left">
@@ -325,46 +334,34 @@
 <!--Evenements-->
 		<div id="gevenement" class="col-xs-12 col-md-12 event-area">
 			<h2>Événements à venir</h2>
-			<div class="col-xs-12 col-md-4 col-lg-4 containimg">
-				<div class="card">
-					<img class="eventimg" src="./wp-content/themes/espace_soutine/img/events/mon-faux-sapin.jpg" alt="mon-faux-sapin">
-					<div class="padding">
-						<p class="padding-top"><b>Théâtre</b></p>
-						<p>Mon faux sapin, par La Compagnie des 12 Portes</p>
-						<div class="datee">
-							<p><span class="glyphicon glyphicon-calendar"></span>Samedi 23 avril 20h30</p>
-						</div>
-						<a class="boutonbas" href="http://www.leves.fr/slider-homepage" title="En savoir plus">
-							En savoir plus
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-4 col-lg-4 containimg">
-				<div class="card">
-					<img class="eventimg" src="./wp-content/themes/espace_soutine/img/events/Gerard-de-Botton.jpg" alt="Gerard-de-Botton">
-					<div class="padding">
-						<p class="padding-top"><b>Concert</b></p>
-						<p>Gérard de Botton avec l'école de musique de Lèves</p>
-						<p class="datee"><span class="glyphicon glyphicon-calendar"></span>Samedi 30 avril 20h30</p>
-						<a class="boutonbas" href="http://www.leves.fr/slider-homepage" title="En savoir plus">
-							En savoir plus
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-4 col-lg-4 containimg">
-				<div class="card">
-					<img class="eventimg" src="./wp-content/themes/espace_soutine/img/events/becket.jpg" alt="becket">
-					<div class="padding">
-						<p class="padding-top"><b>Théâtre</b></p>
-						<p>Becket ou l'honneur de Dieu</p>
-						<p class="datee"><span class="glyphicon glyphicon-calendar"></span>Vendredi 17 juin 20h30 </p>
-						<a class="boutonbas" href="http://www.leves.fr/slider-homepage" title="En savoir plus">
-							En savoir plus
-						</a>
-					</div>
-				</div>
-			</div>
+			<?php    $thumbs = array(
+                'posts_per_page' => 3,
+                'meta_query' => array(array('key' => '_thumbnail_id'))
+					 );
+						$newsWithPic = new WP_Query($thumbs);
+							if($newsWithPic->have_posts()) :
+								while ($newsWithPic->have_posts() ) : $newsWithPic->the_post();
+		  						?>
+				  					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 containimg">
+					  					<div class="card">
+						  					<div class="img-responsive">
+							  					<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'taille-perso' ); } 
+							  					?>
+									        </div>
+									        <div class="texte_event">
+									            <p class="postmetadata">
+									            </p>
+									            <p><?php the_content(); ?></p>
+									            <a class="boutonbas" href="http://www.leves.fr/slider-homepage" title="En savoir plus">
+												En savoir plus
+												</a>
+											</div>
+										</div>
+									</div>
+								<?php
+							endwhile;
+						endif;
+				wp_reset_postdata();
+			?>	
 		</div>
-		<?php get_footer(); ?>
+<?php get_footer(); ?>

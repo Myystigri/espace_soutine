@@ -6,6 +6,11 @@ function enqueue_bootstrap() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_bootstrap' );
 
+function my_add_frontend_scripts() {
+        wp_enqueue_script('jquery');
+        wp_enqueue_script('jquery-ui-core');
+}
+add_action('wp_enqueue_scripts', 'my_add_frontend_scripts');
 
 
 
@@ -13,17 +18,25 @@ function register_my_menu() {
 		register_nav_menus(
 			array(
       				'nav-menu' => __( 'Nav Menu' ),
+              'nav-menu-right' => __( 'Nav Menu Right' ),
       				'footer-menu' => __( 'Footer Menu' ),
     			)
 			);
 	}
 	add_action( 'init', 'register_my_menu' );
 
+function theme_js(){
+wp_enqueue_script( 'anime',
+get_template_directory_uri() . '/js/anime.js',
+array() ); 
+}
+ 
+add_action( 'wp_footer', 'theme_js' );
 
+add_theme_support( 'post-thumbnails' );
 
-/*
-register_nav_menus( array(
-        'nav' => 'Navigation',
-     	   'container_class' => 'nav navbar-nav'
-    ) );
-*/
+// Taille image perso
+
+if ( function_exists( 'add_image_size' ) ) {
+  add_image_size( 'taille-perso', 250, 175, true );
+}

@@ -20,9 +20,38 @@ a
 
 /*navbar*/
 
-.navbar-brand{
-	font-size: 20px;
+.menu-item a{
+	color:#000!important;
 }
+.menu-item:hover{
+	background-color: #17224f !important;
+	color: white !important;
+}
+.menu-item a:hover{
+	background-color: #17224f !important;
+	color: #fff !important;
+}
+.navbar-brand{
+	height: 0px;
+	padding: 15px 10px;
+}
+
+@media(max-width: 765px){
+	.navbar-brand {
+		height: 0px;
+		padding: 0px 10px;
+		line-height: 3em;
+	}
+}
+
+.navbar-right a{
+	background-color:#17224f;
+	color:#fff!important;
+}
+.navbar-right a:hover{
+	background-color:#335481!important;
+}
+
 .navbar {
 	margin-bottom: 0px;
 	background-color: white;
@@ -199,12 +228,13 @@ h1 span{
 	text-align: center;
 	font-family: "Helvetica";
 	margin: 2em 0 0.5em 0;
+	color:rgb(51, 84, 129);
 }
 #presentation .description{
 	margin-bottom: 2em;
 	font-family: "Helvetica";
 	text-align: justify;
-	color: #17224f;
+	
 }
 .pic_line{
 	text-align: center;
@@ -250,6 +280,9 @@ h1 span{
 .bli{
 	margin-top: 60px;
 	margin-left: 1%;
+}
+#billet{
+	padding: 0 2em;
 }
 .marge1{
 	margin: 65px 0 0 0;
@@ -524,7 +557,7 @@ h1 span{
 	margin: 0 2%;
 }
 .carousel-inner{
-	height:500px;
+	max-height:500px;
 }
 .carousel-inner img{
 	width: 100%;
@@ -656,12 +689,17 @@ h1 span{
 
 .blue-area
 {
-	background-color:#12122c;
+	background-color:#17224f;
 	margin-top:49px;
 	padding-bottom:25px;
 }
 
 /*evenement*/
+
+.img-responsive{
+	text-align: center;
+	height: 175px;
+}
 
 .event-area
 {
@@ -683,7 +721,7 @@ h1 span{
 
 .card
 {
-	width:70%;
+	width:250px;
 	height:350px;
 	text-align:left;
 	position:relative;
@@ -762,6 +800,10 @@ h1 span{
 }
 .card p {
 	font-size:14px;
+}
+
+.texte_event {
+	padding: 0.5em;	
 }
 
 /*footer*/
@@ -874,7 +916,15 @@ p{
 		font-size: 0.9em;
 	}
 }
-
+@media screen and (max-width: 768px) {
+	.card{
+		padding: 0;
+		margin-bottom:2em;
+	}
+	.event-area	{
+		padding: 0;
+	}
+}
 @media screen and (min-width: 900px) {
 	.prestation {
 		height:400px;
@@ -884,17 +934,9 @@ p{
 	.info {
 		border:none;
 	}
-	.card {
-		height:550px;
-	}
 }
 @media screen and (min-width: 1600px) {
 	.card {
 		height:450px;
-	}
-}
-@media screen and (max-width: 361px) {
-	.card {
-		height: 300px;
 	}
 }

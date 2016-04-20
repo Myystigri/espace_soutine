@@ -5,7 +5,6 @@
 		<title><?php bloginfo('name'); ?></title>
 		<link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>"/>
-		<link type="image/jpg" href="./img/EspaceSoutineFavicon.png" rel="shortcut icon"></link>
 		<?php wp_head(); ?>
 	</head>
 	<body>
@@ -31,6 +30,11 @@
 									'theme_location' => 'nav-menu',
 									'container' => false,
 									'menu_class' => 'nav navbar-nav' ) ); 
+									?>
+								<?php wp_nav_menu( array(
+									'theme_location' => 'nav-menu-right',
+									'container' => false,
+									'menu_class' => 'nav navbar-nav navbar-right' ) ); 
 									?>
 			        		</div>
 			      		</div>

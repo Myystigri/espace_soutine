@@ -24,18 +24,18 @@
 					<h3 style="margin-top:0px;">Un service de la ville de Lèves</h3>
 					<div class="logo-mairie">
 						<a href="http://www.leves.fr">
-							<img src="./wp-content/themes/espace_soutine/img/ico/leves.jpg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/leves.jpg">
 						</a>
 					</div>
 					<div class="col-xs-12 logo-social">
 						<div class="col-xs-2" style="padding-left:0px;">
 							<a href="https://www.facebook.com/villedeleves">
-								<img src="./wp-content/themes/espace_soutine/img/ico/facebook.png">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/facebook.png">
 							</a>
 						</div>
 						<div class="col-xs-2" style="padding-left:0px;">
 							<a href="https://twitter.com/villedeleves">
-								<img src="./wp-content/themes/espace_soutine/img/ico/twitter.png">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/twitter.png">
 							</a>
 						</div>
 					</div>
@@ -46,6 +46,5 @@
  			</div>
 		</div>
 		<?php wp_footer(); ?>
-		<script type ="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/anime.js"></script>
 	</body>
 </html>
