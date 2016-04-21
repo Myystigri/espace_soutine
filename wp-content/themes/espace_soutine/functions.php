@@ -13,6 +13,7 @@ function my_add_frontend_scripts() {
 add_action('wp_enqueue_scripts', 'my_add_frontend_scripts');
 
 
+add_theme_support( 'post-thumbnails' );
 
 function register_my_menu() {
 		register_nav_menus(
@@ -24,16 +25,6 @@ function register_my_menu() {
 			);
 	}
 	add_action( 'init', 'register_my_menu' );
-
-function theme_js(){
-wp_enqueue_script( 'anime',
-get_template_directory_uri() . '/js/anime.js',
-array() ); 
-}
- 
-add_action( 'wp_footer', 'theme_js' );
-
-add_theme_support( 'post-thumbnails' );
 
 // Taille image perso
 

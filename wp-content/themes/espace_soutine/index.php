@@ -2,15 +2,23 @@
 <!--Présentation Espace Soutine-->
 		<div id="gpresentation" class="col-xs-12">
 			<div class="row">
-				<div class="description col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+				<div class="description col-md-8 col-md-offset-2 col-xs-12 ">
 					<?php
-						 $id = 1;
-						 $billet = get_post($id);
-						 $title = $billet->post_title;
-						 $contenu = $billet->post_content;
-						 $contenu = apply_filters('the_content', $contenu);
-						 $contenu = str_replace(']]>', ']]&gt;', $contenu);
+	                    $args = array(
+	                        'post_type' => 'post',
+	                        'posts_per_page' => 1,
+	                        'category_name' => 'presentation'
+	                    );
+	                    $my_query = new WP_Query($args);
+	                    if($my_query->have_posts()) : while ($my_query->have_posts() ) : $my_query->the_post();
 					?>
+					<h2 style="color:#335481;"><?php the_title(); ?></h2>
+        			<?php the_content(); ?>
+	                <?php
+	                    endwhile;
+	                    endif;
+	                    wp_reset_postdata();
+	                ?>
 					<div id="billet">
 					 	<?php echo "<h2>$title</h2><p>$contenu</p><strong>$date</strong>"; ?>
 		 			</div>
@@ -62,23 +70,30 @@
 							<div class="overflow">
 								<div class="bandeau"></div>
 								<h3 class="textimg">Grande salle configuration tribune</h3>
-								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 340 personnes</p>
+								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 302 personnes</p>
 								<img class="prestation imgrefund" src="<?php echo get_template_directory_uri(); ?>/img/02.jpg" alt="Grande_salle">
 								<div class="overflow_text">
 									<h3 class="textimg4">Grande salle configuration tribune</h3>
-									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 340 personnes</p>
-									<p class="bli">
-									<?php
-										 $id = 29;
-										 $billet = get_post($id);
-										 $contenu = $billet->post_content;
-										 $contenu = apply_filters('the_content', $contenu);
-										 $contenu = str_replace(']]>', ']]&gt;', $contenu);
-									?>
-									</p>
-									<div id="billet">
-									 	<?php echo "<p>$contenu</p>"; ?>
-						 			</div>							
+									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 302 personnes</p>
+									<div class="divbli">
+										<p class="bli">
+											<?php
+							                    $args = array(
+							                        'post_type' => 'post',
+							                        'posts_per_page' => 1,
+							                        'category_name' => 'configuration_tribune'
+							                    );
+							                    $my_query = new WP_Query($args);
+							                    if($my_query->have_posts()) : while ($my_query->have_posts() ) : $my_query->the_post();
+											?>
+	                            			<?php the_content(); ?>
+							                <?php
+							                    endwhile;
+							                    endif;
+							                    wp_reset_postdata();
+							                ?>
+										</p>
+									</div>					
 								</div>
 							</div>
 						</div>
@@ -86,23 +101,30 @@
 							<div class="overflow">
 								<div class="bandeau"></div>
 								<h3 class="textimg">Grande salle configuration repas</h3>
-								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>	/img/ico/cap.png" alt="capacité"> 220 personnes</p>
+								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>	/img/ico/cap.png" alt="capacité"> 250 personnes</p>
 								<img class="prestation imgrefund" src="<?php echo get_template_directory_uri(); ?>/img/01.jpg" alt="Grande_salle">
 								<div class="overflow_text">
 									<h3 class="textimg4">Grande salle configuration repas</h3>
-									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 220 personnes</p>
-									<p class="bli">
-									<?php
-										 $id = 31;
-										 $billet = get_post($id);
-										 $contenu = $billet->post_content;
-										 $contenu = apply_filters('the_content', $contenu);
-										 $contenu = str_replace(']]>', ']]&gt;', $contenu);
-									?>
-									</p>
-									<div id="billet">
-									 	<?php echo "<p>$contenu</p>"; ?>
-						 			</div>
+									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 250 personnes</p>
+									<div class="divbli">
+										<p class="bli">
+											<?php
+							                    $args = array(
+							                        'post_type' => 'post',
+							                        'posts_per_page' => 1,
+							                        'category_name' => 'configuration repas'
+							                    );
+							                    $my_query = new WP_Query($args);
+							                    if($my_query->have_posts()) : while ($my_query->have_posts() ) : $my_query->the_post();
+											?>
+	                            			<?php the_content(); ?>
+							                <?php
+							                    endwhile;
+							                    endif;
+							                    wp_reset_postdata();
+							                ?>
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -112,23 +134,30 @@
 							<div class="overflow">
 								<div class="bandeau"></div>
 								<h3 class="textimg">Salle de réunions</h3>
-								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 50 personnes</p>
+								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 40 personnes</p>
 								<img class="prestation imgrefund" src="<?php echo get_template_directory_uri(); ?>/img/06.jpg" alt="Salle_de_reunion">
 								<div class="overflow_text">
 									<h3 class="textimg4">Salle de réunions</h3>
-									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 50 personnes</p>
-									<p class="bli">
-									<?php
-										 $id = 33;
-										 $billet = get_post($id);
-										 $contenu = $billet->post_content;
-										 $contenu = apply_filters('the_content', $contenu);
-										 $contenu = str_replace(']]>', ']]&gt;', $contenu);
-									?>
-									</p>
-									<div id="billet">
-									 	<?php echo "<p>$contenu</p>"; ?>
-						 			</div>	
+									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 40 personnes</p>
+									<div class="divbli">
+										<p class="bli">
+											<?php
+							                    $args = array(
+							                        'post_type' => 'post',
+							                        'posts_per_page' => 1,
+							                        'category_name' => 'salle_de_reunions'
+							                    );
+							                    $my_query = new WP_Query($args);
+							                    if($my_query->have_posts()) : while ($my_query->have_posts() ) : $my_query->the_post();
+											?>
+	                            			<?php the_content(); ?>
+							                <?php
+							                    endwhile;
+							                    endif;
+							                    wp_reset_postdata();
+							                ?>
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -136,23 +165,30 @@
 							<div class="overflow">
 								<div class="bandeau"></div>
 								<h3 class="textimg">Hall d'accueil</h3>
-								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 100 personnes</p>
+								<p class="textimg5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 85 personnes</p>
 								<img class="prestation imgrefund" src="<?php echo get_template_directory_uri(); ?>/img/03.jpg" alt="Hall_d_accueil">
 								<div class="overflow_text">
 									<h3 class="textimg4">Hall d'accueil</h3>
-									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 100 personnes</p>	
-									<p class="bli">
-									<?php
-										 $id = 35;
-										 $billet = get_post($id);
-										 $contenu = $billet->post_content;
-										 $contenu = apply_filters('the_content', $contenu);
-										 $contenu = str_replace(']]>', ']]&gt;', $contenu);
-									?>
-									</p>
-									<div id="billet">
-									 	<?php echo "<p>$contenu</p>"; ?>
-						 			</div>
+									<p class="nbr"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/cap.png" alt="capacité"> 85 personnes</p>	
+									<div class="divbli">
+										<p class="bli">
+											<?php
+							                    $args = array(
+							                        'post_type' => 'post',
+							                        'posts_per_page' => 1,
+							                        'category_name' => 'hall_d_accueil'
+							                    );
+							                    $my_query = new WP_Query($args);
+							                    if($my_query->have_posts()) : while ($my_query->have_posts() ) : $my_query->the_post();
+											?>
+	                            			<?php the_content(); ?>
+							                <?php
+							                    endwhile;
+							                    endif;
+							                    wp_reset_postdata();
+							                ?>
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -160,12 +196,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-md-12 blanc invite_telecharger">
-			<div class="col-md-offset-4 col-md-6">
-				<a href="#" download="#">
+		<div class="col-xs-12 col-sm-12 col-md-12 blanc invite_telecharger">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-4 col-md-6">
 					<p class="float-left">Téléchargez nos prestations et tarifs</p>
-				</a>
-				<a class="btn-header btn-default padding-left-20px" href="#" download="#">
+				<a class="btn-header btn-default padding-left-20px" href="<?php echo get_home_url(); ?>/index.php/download/">
 	        		<span class="dl glyphicon glyphicon-download-alt telecharger "><span>
 	        	</a>
 	        </div>
@@ -174,48 +208,56 @@
 		<div id="galerie" class="galerie col-md-12">
 			<h2>Galerie</h2>
 			<div class="row">
-<div id="carousel-captions" class="carousel slide bs-docs-carousel hidden-xs">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-captions" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-captions" data-slide-to="1" class=""></li>
-          <li data-target="#carousel-captions" data-slide-to="2" class=""></li>
-          <li data-target="#carousel-captions" data-slide-to="3" class=""></li>
-          <li data-target="#carousel-captions" data-slide-to="4" class=""></li>
-        </ol>
-<div class="carousel-inner">
-        <?php
-	          $the_query = new WP_Query(array(
-	           'post_type' =>'post',
-	           'posts_per_page' => 1
-	         ));
-	         while ( $the_query->have_posts() ) :
-	         $the_query->the_post();
-         ?>
-        <div class="item active">
-            First Slide
-        </div>
-        <?php endwhile; wp_reset_postdata(); ?>
-        <?php
-	         $the_query = new WP_Query(array(
-	          'post_type' =>'post',
-	          'offset' => 1
-	         ));
-	         while ( $the_query->have_posts() ) :
-	         $the_query->the_post();
-         ?>
-         <div class="item">
-            Remaining Slides
-         </div>
-        <?php endwhile; wp_reset_postdata(); ?>
-    </div>
-        
-        <a class="left carousel-control" href="#carousel-captions" data-slide="prev">
-          <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-captions" data-slide="next">
-          <span class="icon-next"></span>
-        </a>
-</div>
+				<div class="col-md-12">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<?php
+								$args = array(
+									'post_type' => 'post',
+									'posts_per_page' => 1,
+									'category_name' => 'carousel-active',
+								);
+								$my_query = new WP_Query($args);
+								if($my_query->have_posts()) : while ($my_query->have_posts() ) : $my_query->the_post();
+							?> 
+							<div class="item active main-carousel">
+								<?php the_content(); ?>
+							</div>
+							<?php
+								endwhile;
+								endif;
+								wp_reset_postdata();
+							?>
+							<?php
+								$args = array(
+									'post_type' => 'post',
+									'posts_per_page' => 9,
+									'category_name' => 'carousel',
+								);
+								$my_query = new WP_Query($args);
+								if($my_query->have_posts()) : while ($my_query->have_posts() ) : $my_query->the_post();
+							?> 
+							<div class="item main-carousel">
+								<?php the_content(); ?>
+							</div>
+							<?php
+								endwhile;
+								endif;
+								wp_reset_postdata();
+							?>
+						</div>
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
 			</div>
 			<div id="gnous_contacter"></div>
 		</div>
@@ -263,68 +305,8 @@
 	                    <div class="row">
 	                            <div id ="contact" class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 center form_padding">
 	                            <form method="post">
-	                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center form_padding">
-	                                    <div class="col-xs-6 col-md-6 col-lg-6 form_padding_l">
-	                                         <div class="form-group white">
-	                                              <label class="control-label requiredField" for="name">NOM</label>
-	                                              <input class="form-control" id="name" name="name" type="text"/>
-	                                          </div>
-	                                      </div>
-	                                      <div class="col-xs-6 col-md-6 col-lg-6 form_padding_r">
-	                                         <div class="form-group white">
-	                                              <label class="control-label requiredField" for="name">Prénom</label>
-	                                              <input class="form-control" id="name" name="name" type="text"/>
-	                                          </div>
-	                                      </div>
-	                                  </div>
-	                                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center form_padding">
-	                                      <div class="col-lg-6 form_padding-l2">
-	                                         <div class="form-group white">
-	                                              <label class="control-label requiredField" for="email">Email</label>
-	                                              <input class="form-control" id="email" name="email" type="text"/>
-	                                         </div>
-	                                     </div>
-	                                    <div class="col-lg-6 form_padding-r2">
-	                                         <div class="form-group white">
-	                                              <label class="control-label requiredField" for="email">Téléphone</label>
-	                                              <input class="form-control" id="name" name="name" type="text"/>
-	                                         </div>
-	                                     </div>
-	                                 </div>
-	                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center form_padding">
-	                                      <div class="col-lg-6 form_padding-l2">
-	                                         <div class="form-group white">
-	                                              <label class="control-label requiredField" for="name">Code postal</label>
-	                                              <input class="form-control" id="name" name="name" type="text"/>
-	                                         </div>
-	                                     </div>
-	                                     <div class="col-lg-6 form_padding-r2">
-	                                         <div class="form-group white">
-	                                             <label class="control-label " for="select">Vous êtes</label>
-	                                             <select class="select form-control" id="select" name="select">
-	                                                 <option value="First Choice">Entreprise</option>
-	                                                 <option value="Second Choice">Institutionnel</option>
-	                                                 <option value="Third Choice">Association</option>
-	                                                 <option value="Fourth Choice">Particulier</option>
-	                                                 <option value="fifth Choice">Autre</option>
-	                                             </select>
-	                                         </div>
-	                                     </div>
-	                                 </div>
-	                                 <div class="form-group white">
-	                                      <label class="control-label requiredField" for="subject">Objet</label>
-	                                      <input class="form-control" id="subject" name="subject" type="text"/>
-	                                 </div>
-	                                 <div class="form-group white">
-	                                     <label class="control-label" for="message">Message</label>
-	                                      <textarea class="form-control" cols="40" id="message" name="message" rows="4"></textarea>
-	                                  </div>
-	                                  <div class="form-group">
-	                                      <div>
-	                                          <button class="btn btn-default " name="submit" type="submit">Envoyez</button>
-	                                      </div>
-	                                  </div>
-	                              </form>
+	                            	<?php echo do_shortcode( '[contact-form-7 id="169" title="Nous contacter"]' ); ?>    
+	                            </form>
 	                          </div>
 	                    </div>
 	                </div>
@@ -335,6 +317,7 @@
 		<div id="gevenement" class="col-xs-12 col-md-12 event-area">
 			<h2>Événements à venir</h2>
 			<?php    $thumbs = array(
+				'category_name' => 'Evenements',
                 'posts_per_page' => 3,
                 'meta_query' => array(array('key' => '_thumbnail_id'))
 					 );
